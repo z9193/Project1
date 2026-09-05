@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+	--color-ink: #10231e;
+	--color-forest: #16362d;
+	--color-leaf: #1f9d73;
+	--color-mist: #eef4f1;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	margin: 0;
+	background: #eef4f1;
+	color: #10231e;
+	font-family: var(--font-sans);
+}
+
+.login-grid {
+	background-color: #10231e;
+	background-image:
+		radial-gradient(circle at 18% 20%, rgba(31, 157, 115, 0.35), transparent 32%),
+		radial-gradient(circle at 82% 78%, rgba(255, 255, 255, 0.08), transparent 28%),
+		linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+	background-size:
+		auto,
+		auto,
+		28px 28px,
+		28px 28px;
+}
