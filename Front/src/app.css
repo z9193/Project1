@@ -1,0 +1,32 @@
+:root {
+  --bg: #161616;
+  --ink: #f4f4f4;
+  --cyan: #3ad7c8;
+  --muted: #8c8c8c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'VT323', monospace;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--cyan);
+  color: #111;
+}
